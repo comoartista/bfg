@@ -1,7 +1,5 @@
 // ========================= [ Header styles ] =========================
 .header {
-    background-color: #43adff;
-
     &.fixed {
         position: fixed;
         left: 0;
@@ -17,9 +15,7 @@
     padding: 20px 0;
 }
 .logo {
-    a {
-        color: white;
-    }
+    width: 125px;
 }
 
 // ========================== [ Menu styles ] ==========================
@@ -35,7 +31,7 @@
 
     // .menu__item-link
     &__item-link {
-        color: white;
+        color: $mainColor;
         display: flex;
         position: relative;
         transition: 0.5s color;

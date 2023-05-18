@@ -1,3 +1,13 @@
+// Container & Breakpoints
+@use 'sass:math';
+$containerWidth: 1354;
+$containerPadding: 43;
+$containerSidePadding: math.div($containerPadding, 2);
+$breakpoint1450: 1449.98 + px;
+$breakpoint992: 991.98 + px;
+$breakpoint768: 767.98 + px;
+$breakpoint480: 479.98 + px;
+
 // Container
 .container {
     max-width: ($containerWidth + $containerPadding) + px;
@@ -22,9 +32,29 @@
     }
 }
 
+@font-face {
+    font-family: 'VT323';
+    src: url('../fonts/VT323-Regular.woff') format('woff');
+    src: url('../fonts/VT323-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+// Colors
+$mainColor: #000000;
+
+// Burger Menu
+$burgerBreakpoint: $breakpoint992;
+$burgerColor: #131418;
+$burgerActiveColor: #fefefe;
+
+// Fonts
+$fontMain: 'VT323', sans-serif;
+
 // Body & Locked
 body {
-    font-family: $fontMain;
+    font: 400 32px / 32px $fontMain;
+
     &.locked {
         overflow: hidden;
     }
@@ -33,6 +63,21 @@ body {
         background: #242424;
     }
 }
+
+.h1 {
+    font: 400 142px / 109px $fontMain;
+}
+
+.h2 {
+    font: 400 48px / 48px $fontMain;
+}
+
+.h3 {
+    font: 400 36px / 36px $fontMain;
+}
+
+
+
 
 // Animations
 // Fade
