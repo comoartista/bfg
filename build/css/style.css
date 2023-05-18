@@ -68,10 +68,10 @@ h6 {
 }
 
 .container {
-  max-width: 1397px;
+  max-width: 1374px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 21.5px;
+  padding: 0 10px;
 }
 
 @font-face {
@@ -85,6 +85,7 @@ h6 {
 
 body {
   font: 400 32px/32px "VT323", sans-serif;
+  color: #000000;
 }
 
 body.locked {
@@ -100,11 +101,130 @@ body.dark {
 }
 
 .h2 {
+  padding-top: 65px;
   font: 400 48px/48px "VT323", sans-serif;
 }
 
 .h3 {
   font: 400 36px/36px "VT323", sans-serif;
+}
+
+.divider {
+  position: relative;
+}
+
+.divider:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background: #131418;
+  height: 2.5px;
+  width: 100%;
+  display: block;
+}
+
+.cases__container {
+  padding: 65px 0 200px;
+}
+
+.cases__row {
+  margin-top: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 70px;
+}
+
+.cases__content {
+  margin-top: 65px;
+}
+
+.cases__list {
+  margin-top: 24px;
+}
+
+.cases__title {
+  position: relative;
+}
+
+.cases__title:after {
+  position: absolute;
+  content: "";
+  top: 40px;
+  left: 0;
+  background: #131418;
+  height: 2.5px;
+  width: 100%;
+  display: block;
+}
+
+.contact__text {
+  margin-top: 53px;
+  max-width: 966px;
+  font: 400 48px/48px "VT323", sans-serif;
+}
+
+.contact__link {
+  margin-top: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 120px;
+  position: relative;
+  max-width: 300px;
+}
+
+.contact__link:after {
+  position: absolute;
+  content: "";
+  top: 50px;
+  left: 0;
+  background: #131418;
+  height: 2.5px;
+  width: 100%;
+  display: block;
+}
+
+.contact__telegram {
+  color: #000000;
+  font: 400 48px/48px "VT323", sans-serif;
+}
+
+.footer {
+  margin: 250px 0 125px;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 22px;
+}
+
+.footer__address {
+  max-width: 495px;
+  font: 400 27px/27px "VT323", sans-serif;
 }
 
 @-webkit-keyframes fade {

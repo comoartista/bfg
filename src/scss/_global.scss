@@ -1,7 +1,7 @@
 // Container & Breakpoints
 @use 'sass:math';
 $containerWidth: 1354;
-$containerPadding: 43;
+$containerPadding: 20;
 $containerSidePadding: math.div($containerPadding, 2);
 $breakpoint1450: 1449.98 + px;
 $breakpoint992: 991.98 + px;
@@ -13,7 +13,7 @@ $breakpoint480: 479.98 + px;
     max-width: ($containerWidth + $containerPadding) + px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 $containerSidePadding + px;
+    padding: 0 10px;
 
     @media (max-width: $breakpoint1450) {
         max-width: 1200px;
@@ -54,6 +54,7 @@ $fontMain: 'VT323', sans-serif;
 // Body & Locked
 body {
     font: 400 32px / 32px $fontMain;
+    color: $mainColor;
 
     &.locked {
         overflow: hidden;
@@ -69,6 +70,7 @@ body {
 }
 
 .h2 {
+    padding-top: 65px;
     font: 400 48px / 48px $fontMain;
 }
 
@@ -77,8 +79,109 @@ body {
 }
 
 
+.divider {
+    position: relative;
 
+    &:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background: #131418;
+    height: 2.5px;
+    width: 100%;
+    display: block;
+    }
+}
 
+//Cases
+.cases {
+    
+}
+.cases__container {
+    padding: 65px 0 200px; 
+}
+.cases__row {
+    margin-top: 140px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+
+.cases__content {
+    margin-top: 65px;
+}
+
+.cases__list {
+    margin-top: 24px;
+}
+
+.cases__title {
+    position: relative;
+    &:after {
+        position: absolute;
+        content: '';
+        top: 40px;
+        left: 0;
+        background: #131418;
+        height: 2.5px;
+        width: 100%;
+        display: block;
+    }
+}
+
+//Contact
+.contact__text {
+    margin-top: 53px;
+    max-width: 966px;
+    font: 400 48px / 48px $fontMain;
+}
+
+.contact__link {
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    position: relative;
+    max-width: 300px;
+
+    &:after {
+    position: absolute;
+    content: '';
+    top: 50px;
+    left: 0;
+    background: #131418;
+    height: 2.5px;
+    width: 100%;
+    display: block;
+    }
+}
+
+.contact__telegram {
+    color: $mainColor;
+    font: 400 48px / 48px $fontMain;
+}
+
+//footer 
+.footer {
+    margin: 250px 0 125px;
+}
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__social {
+    display: flex;
+    gap: 22px;
+}
+
+.footer__address {
+    max-width: 495px;
+    font: 400 27px / 27px $fontMain;
+
+}
 // Animations
 // Fade
 @keyframes fade {
