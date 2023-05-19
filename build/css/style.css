@@ -67,6 +67,10 @@ h6 {
   font-size: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1440px;
   width: 100%;
@@ -96,6 +100,10 @@ body.dark {
   background: #242424;
 }
 
+.wrapper {
+  overflow: hidden;
+}
+
 .h1 {
   font: 400 142px/109px "VT323", sans-serif;
 }
@@ -122,6 +130,16 @@ body.dark {
   height: 2.5px;
   width: 100%;
   display: block;
+}
+
+.ellipse {
+  position: absolute;
+  width: 353px;
+  height: 353px;
+  background: #AACFFF;
+  -webkit-filter: blur(143.5px);
+          filter: blur(143.5px);
+  z-index: -1;
 }
 
 .header.fixed {
@@ -161,6 +179,10 @@ body.dark {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+}
+
+.menu__item:first-child {
+  margin-right: 280px;
 }
 
 .menu__item-link {
@@ -207,6 +229,22 @@ body.dark {
   display: none;
   background: transparent;
   z-index: 3;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero__ellipse1 {
+  left: 98px;
+  top: 335px;
+}
+
+.hero__ellipse2 {
+  width: 555px;
+  height: 555px;
+  right: 130px;
+  top: 258px;
 }
 
 .hero__container {
@@ -261,6 +299,15 @@ body.dark {
   display: block;
 }
 
+.clients {
+  position: relative;
+}
+
+.clients__ellipse {
+  right: -86px;
+  top: -140px;
+}
+
 .clients__container {
   padding: 65px 0 200px;
 }
@@ -276,6 +323,28 @@ body.dark {
       flex-wrap: wrap;
   gap: 70px;
   margin-top: 92px;
+}
+
+.clients__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 70px;
+  margin-top: 92px;
+}
+
+.contact {
+  position: relative;
+}
+
+.contact__ellipse {
+  top: 130px;
+  right: 125px;
 }
 
 .contact__text {
@@ -339,26 +408,6 @@ body.dark {
 .footer__address {
   max-width: 495px;
   font: 400 27px/27px "VT323", sans-serif;
-}
-
-@-webkit-keyframes fade {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
 }
 
 @media (max-width: 1449.98px) {
