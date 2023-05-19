@@ -10,12 +10,33 @@
 </head>
 
 <body class="main__body">
-    <!-- Header -->
-    @@include('./html/_header.html')
-    <!-- Main Page -->
+    <header class="header">
+        <!-- Navbar -->
+
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="#">
+                        <img src="../img/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <nav>
+                    <ul class="menu">
+                        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Use Cases</a></li>
+                        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Clients</a></li>
+                        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Contacts</a></li>
+                    </ul>
+                </nav>
+
+                <button class="burger">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
     <main>
         <section class="hero">
-            <div class="container hero__container">
+            <div class="container hero__container divider">
                 <h1 class="hero__title h1">Legal advisors that bring money to your cryptoprojects </h1>
                 <h2 class="hero__descr h2">We create a legal setup tailored for investments attraction and project
                     development.</h2>
@@ -69,9 +90,14 @@
         </section>
 
         <section class="clients">
-            <div class="container">
+            <div class="container  clients__container divider">
+                <h2 class="h2">Clients</h2>
                 <div class="clients__logo">
-
+                    <img src="./img/clients-metapax.jpg" alt="metapax logo">
+                    <img src="./img/clients-dtelecom.svg" alt="dtelecom logo">
+                    <img src="./img/clients-omonaga.svg" alt="omonada logo">
+                    <img src="./img/clients-spitovers.svg" alt="spitovers logo">
+                    <img src="img/clients-bitmeet.svg" alt="bitmeet logo">
                 </div>
             </div>
         </section>
