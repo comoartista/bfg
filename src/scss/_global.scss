@@ -12,10 +12,10 @@ html {
 
 // Container
 .container {
-    max-width: 1440px;
+    max-width: 1386px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 16px;
 
     @media (max-width: $breakpoint1450) {
         max-width: 1200px;
@@ -74,6 +74,10 @@ body {
 
 .h1 {
     font: 400 142px / 109px $fontMain;
+    text-transform: uppercase;
+    @media (max-width: $breakpoint992) {
+        font: 400 64px / 64px $fontMain;
+    }
 }
 
 .h2 {
@@ -88,6 +92,7 @@ body {
 
 .divider {
     position: relative;
+    display: block;
 
     &:after {
     position: absolute;
@@ -109,7 +114,6 @@ body {
     filter: blur(143.5px);
     z-index: -1;
 }
-
 
 // ========================= [ Header styles ] =========================
 .header {
@@ -136,13 +140,21 @@ body {
     display: flex;
     gap: 30px;
 
+    @media (max-width: $breakpoint992) {
+        gap: 60px;
+    }
+
     // .menu__item
     &__item {
         display: flex;
         position: relative;
         &:first-child {
             margin-right: 280px;
+            @media (max-width: $breakpoint992) {
+                margin-right: 0;
+            }
         }
+  
     }
 
     // .menu__item-link
@@ -166,11 +178,21 @@ body {
             display: none;
         }
         &:hover {
-            color: #131418;
+            opacity: .8;
+
+
+            transition: .2s linear;
+     
             &:after {
                 transform: scale(1);
             }
         }
+
+        @media (max-width: $breakpoint992) {
+            color: white;
+            font-size: 44px;
+        }
+
     }
 
     // Mobile menu styles
@@ -265,7 +287,7 @@ body {
     position: relative;
     &__ellipse1 {
         left: 98px;
-        top: 335px;
+        top: 230px;
     }
 
     &__ellipse2 {
@@ -276,20 +298,29 @@ body {
     }
 
     &__container {
-        padding: 150px 0 400px;
         position: relative; 
+    }
+
+    &__title {
+        padding: 150px 0 400px;
     }
 
     &__descr {
         max-width: 719px;
         position: absolute;
-        top: 550px;
+        top: 485px;
         right: 0;
     }
 }
 
 
+.mb-200 {
+    margin-bottom: 200px;
+}
 
+.mb-250 {
+    margin-bottom: 250px;
+}
 .cases {
     &__container {
         padding: 65px 0 200px; 
@@ -299,10 +330,33 @@ body {
         margin-top: 140px;
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
         gap: 70px;
     }
+    
+    &__item {
+        display: flex;
+        flex-direction: column;
+    }
 
+    &__img-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img1 {
+        max-width: 185px;
+    }
+
+    &__img2 {
+        margin: 18px 0 18px;
+        max-width: 163px;
+    }
+
+    &__img3 {
+        margin-top: 4px;
+        max-width: 201px;
+    }
     &__content {
         margin-top: 65px;
     }
@@ -311,7 +365,13 @@ body {
         margin-top: 24px;
     }
 
-    &__title {
+
+    &__list-item {
+        list-style: square;
+        list-style-position: inside;
+    }
+
+    &__content-title {
         position: relative;
         &:after {
             position: absolute;
@@ -407,6 +467,14 @@ body {
     &__social {
         display: flex;
         gap: 22px;
+    }
+
+    &__link {
+        cursor: pointer;
+        transition: .2s linear;
+        &:hover {
+            opacity: .8;
+        }
     }
 
     &__address {
