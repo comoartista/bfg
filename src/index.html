@@ -11,6 +11,7 @@
 
 <body class="main__body">
     <div class="wrapper">
+        <!-- <img src="./img/bg.png" alt="background" class="bg"> -->
         <header class="header">
             <div class="container">
                 <div class="navbar">
@@ -39,8 +40,8 @@
 
         <main>
             <section class="hero">
-                <span class="hero__ellipse1 ellipse"></span>
-                <span class="hero__ellipse2 ellipse"></span>
+                <!-- <span class="hero__ellipse1 ellipse"></span>
+                <span class="hero__ellipse2 ellipse"></span> -->
 
                 <div class="container hero__container">
                     <span class="divider"></span>
@@ -59,13 +60,12 @@
                         <div class="cases__item">
                             <div class="cases__img-wrapper">
                                 <img class="cases__img1" src="./img/cases-1.png" alt="img">
-
                             </div>
                             <div class="cases__content">
                                 <h3 class="cases__content-title h3">Private Token Sale</h3>
                                 <ul class="cases__list">
                                     <li class="cases__list-item">Whitepaper</li>
-                                    <li class="cases__list-item">Company incorincorporations</li>
+                                    <li class="cases__list-item">Company incorporations</li>
                                     <li class="cases__list-item">SAFT agreements</li>
                                     <li class="cases__list-item">Financial setup </li>
                                 </ul>
@@ -91,7 +91,7 @@
                             <div class="cases__content">
                                 <h3 class="cases__content-title h3">Private Token Sale</h3>
                                 <ul class="cases__list">
-                                    <li class="cases__list-item">CEX negonegotiations</li>
+                                    <li class="cases__list-item">CEX negotiations</li>
                                     <li class="cases__list-item">Regulatory compliance</li>
                                     <li class="cases__list-item">Legal audit support</li>
                                 </ul>
@@ -102,29 +102,35 @@
             </section>
 
             <section id="clients" class="clients mb-200">
-                <span class="clients__ellipse ellipse"></span>
+                <!-- <span class="clients__ellipse ellipse"></span> -->
                 <div class="container">
                     <span class="divider"></span>
                     <h2 class="h2">Clients</h2>
                     <div class="clients__logo">
-                        <img src="./img/clients-metapax.svg" alt="metapax logo">
-                        <img src="./img/clients-dtelecom.svg" alt="dtelecom logo">
-                        <img src="./img/clients-omonaga.svg" alt="omonada logo">
-                        <img src="./img/clients-spitovers.svg" alt="spitovers logo">
-                        <img src="img/clients-bitmeet.svg" alt="bitmeet logo">
+                        <div class="clients__logo-wrapper">
+                            <img class="clients__logo-metapax" src="./img/logo-metapax.svg" alt="metapax logo">
+                        </div>
+                        <div class="clients__logo-wrapper">
+                            <img class="clients__logo-dtelecom" src="./img/logo-dtelecom.png" alt="dtelecom logo">
+                        </div>
+                        <div class="clients__logo-wrapper">
+                            <img class="clients__logo-omonada" src="./img/logo-omonada.png" alt="omonada logo">
+                        </div>
+                        <div class="clients__logo-wrapper">
+                            <img class="clients__logo-spirovers" src="./img/logo-spirovers.png" alt="spitovers logo">
+                        </div>
+                        <div class="clients__logo-wrapper">
+                            <img class="clients__logo-bitmeet" src="img/logo-bitmeet.png" alt="bitmeet logo">
+                        </div>
                     </div>
                 </div>
             </section>
 
             <section id="contact" class="contact mb-250">
-                <span class="contact__ellipse ellipse"></span>
-
+                <!-- <span class="contact__ellipse ellipse"></span> -->
                 <div class="container">
                     <h2 class="h2">Contact Us</h2>
-                    <p class="contact__text">
-                        We would love to hear from you! Please drop us a message and let us know how we can assist you.
-                    </p>
-                    <a href="#" class="contact__link">
+                    <a target="_blank" href="https://t.me/BFG_Advisors" class="contact__link">
                         <p class="contact__telegram">Telegram</p>
                         <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 25.3368L23.5033 2.8335" stroke="black" stroke-width="2.50036" />
@@ -142,47 +148,44 @@
         <footer class="footer">
             <div class="container footer__container">
                 <div class="footer__social">
-                    <a href="" class="footer__link">
+                    <a target="_blank" href="" class="footer__link">
                         <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="42.25" height="42.25" rx="21.125" fill="black" />
+                            <rect width="42.25" height="42.25" rx="21.125" fill="white" />
                             <path
                                 d="M33 10.6912V30.3088C33 30.7574 32.8141 31.1875 32.4831 31.5047C32.1522 31.8218 31.7033 32 31.2353 32H10.7647C10.2967 32 9.84782 31.8218 9.51687 31.5047C9.18592 31.1875 9 30.7574 9 30.3088V10.6912C9 10.2426 9.18592 9.81249 9.51687 9.49533C9.84782 9.17818 10.2967 9 10.7647 9H31.2353C31.7033 9 32.1522 9.17818 32.4831 9.49533C32.8141 9.81249 33 10.2426 33 10.6912ZM16.0588 17.7941H12.5294V28.6176H16.0588V17.7941ZM16.3765 14.0735C16.3783 13.8177 16.3276 13.564 16.2271 13.3269C16.1267 13.0899 15.9785 12.8741 15.791 12.6919C15.6036 12.5098 15.3805 12.3648 15.1346 12.2652C14.8886 12.1657 14.6246 12.1135 14.3576 12.1118H14.2941C13.7512 12.1118 13.2305 12.3185 12.8466 12.6864C12.4627 13.0543 12.2471 13.5532 12.2471 14.0735C12.2471 14.5938 12.4627 15.0928 12.8466 15.4607C13.2305 15.8286 13.7512 16.0353 14.2941 16.0353C14.5611 16.0416 14.8268 15.9974 15.0759 15.9053C15.3251 15.8131 15.5529 15.6749 15.7463 15.4983C15.9396 15.3218 16.0948 15.1105 16.203 14.8765C16.3111 14.6424 16.3701 14.3903 16.3765 14.1344V14.0735ZM29.4706 22.0424C29.4706 18.7885 27.3106 17.5235 25.1647 17.5235C24.4621 17.4898 23.7625 17.6332 23.1358 17.9395C22.5091 18.2457 21.9771 18.7041 21.5929 19.2688H21.4941V17.7941H18.1765V28.6176H21.7059V22.8609C21.6549 22.2713 21.8487 21.6862 22.2452 21.2328C22.6417 20.7793 23.2089 20.4941 23.8235 20.4391H23.9576C25.08 20.4391 25.9129 21.1156 25.9129 22.8203V28.6176H29.4424L29.4706 22.0424Z"
-                                fill="white" />
+                                fill="black" />
                         </svg>
                     </a>
-
-                    <a href="" class="footer__link">
+                    <a target="_blank" href="https://t.me/BFG_Advisors" class="footer__link">
                         <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0.375" width="42.25" height="42.25" rx="21.125" fill="black" />
-                            <path
-                                d="M30.0565 15.853C29.8821 16.0033 29.7011 16.1462 29.514 16.2815L29.2256 16.4901L29.2414 16.8458C29.2492 17.0215 29.2531 17.2015 29.2531 17.3776C29.2531 22.8193 25.1126 29.0475 17.5832 29.0475H17.5829C16.2164 29.0482 14.8675 28.8083 13.5959 28.3453C15.1092 28.081 16.5429 27.4463 17.7641 26.487L19.2179 25.345L17.3695 25.3079C16.6028 25.2925 15.86 25.0381 15.2449 24.5802C14.9104 24.3312 14.6227 24.0289 14.3921 23.6875C14.745 23.6687 15.096 23.6123 15.439 23.5184L15.3951 22.2345C14.5633 22.067 13.8151 21.6167 13.2778 20.96C12.9503 20.5598 12.7135 20.0981 12.5785 19.6064C12.953 19.7081 13.3394 19.7662 13.7301 19.7786L16.0342 19.8517L14.118 18.57C13.3409 18.0502 12.7908 17.254 12.5797 16.3432C12.442 15.7496 12.4551 15.1363 12.6107 14.5573C13.6179 15.6045 14.7958 16.4768 16.0964 17.1358C17.7175 17.9571 19.4931 18.4286 21.3081 18.5197L22.1813 18.5635L21.9843 17.7116C21.8022 16.9237 21.8846 16.0978 22.2189 15.3615C22.5532 14.6252 23.1208 14.0195 23.8339 13.6381C24.5469 13.2567 25.3658 13.1208 26.1638 13.2515C26.9618 13.3821 27.6946 13.772 28.2488 14.3609L28.4992 14.627L28.8576 14.5561C29.1477 14.4987 29.4346 14.4277 29.7171 14.3434C29.5669 14.47 29.406 14.5852 29.2355 14.6873L29.6511 15.9093C29.7867 15.8935 29.9219 15.8748 30.0565 15.853ZM30.0565 15.853C30.2743 15.6654 30.482 15.4665 30.6785 15.2571C30.4436 15.4671 30.188 15.6557 29.9144 15.8198L29.5749 15.2535L29.4988 14.5978C29.8755 14.554 30.248 14.4832 30.6134 14.3861M30.5546 13.3333C29.9702 13.591 29.3582 13.7841 28.7295 13.9085L30.5546 13.3333Z"
-                                fill="white" stroke="white" stroke-width="1.32031" />
-                        </svg>
-                    </a>
-                    <a href="" class="footer__link">
-                        <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0.75" width="42.25" height="42.25" rx="21.125" fill="black" />
+                            <rect x="0.75" width="42.25" height="42.25" rx="21.125" fill="white" />
                             <path
                                 d="M19.6018 23.9265L19.2523 28.844C19.7523 28.844 19.9688 28.6291 20.2285 28.3711L22.5726 26.1299L27.4297 29.6885C28.3204 30.1852 28.9481 29.9237 29.1884 28.8687L32.3765 13.9224L32.3774 13.9215C32.66 12.604 31.9012 12.0889 31.0333 12.4121L12.2932 19.5902C11.0143 20.0869 11.0336 20.8002 12.0758 21.1234L16.8669 22.6143L27.9956 15.6476C28.5194 15.3006 28.9956 15.4926 28.6039 15.8395L19.6018 23.9265Z"
-                                fill="white" />
+                                fill="black" />
                         </svg>
                     </a>
-
-
-
-
                 </div>
-                <p class="footer__address">
-                    BFG ADVISORS LTD, Company number 12939333, 71-75 Shelton Street, London, Greater London, United
-                    Kingdom,
-                    WC2H 9JQ
-                </p>
-            </div>
+                <div class="footer__column">
+                    <p class="footer__address">
+                        BFG ADVISORS LTD, Company number 12939333, 71-75 Shelton Street, London, Greater London, United
+                        Kingdom,
+                        WC2H 9JQ
+                    </p>
 
+                    <ul class="privacy">
+                        <li class="privacy __item">
+                            <a target="_blank" href="./privacy.html" class="privacy__link">Privacy Policy</a>
+                        </li>
+                        <li class="privacy __item">
+                            <a target="_blank" href="./term.html" class="privacy__link">Terms and
+                                Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </footer>
     </div>
 </body>
-
 <script src="./js/scripts.min.js"></script>
 
 </html>
